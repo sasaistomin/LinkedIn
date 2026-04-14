@@ -1,8 +1,6 @@
-
-import '../styles/App.css';
+import './styles/App.css';
 import logo from './logo.png';
-import photo from './photo.png'
-import './App.css';
+import photo from './photo.png';
 import { Link } from 'react-router-dom';
 
 function App() {
@@ -21,14 +19,16 @@ function App() {
             </header>
             <div className='mainSection'>
                 <div className='Sleft'>
-                    <h1></h1>
-                    <Link className='loginGoogle'>Login with Google</Link>
-                    <Link className='loginEmail'>login by email addressd</Link>
-                    <p></p>
-                    <div><p></p><Link></Link></div>
+                    <h1>Welcome <br /> to the community specialists!</h1>
+                    <nav>
+                        <Link className='loginGoogle'>Login with Google</Link>
+                        <Link className='loginEmail'>login by email addressd</Link>
+                    </nav>
+                    <p>By clicking "Continue" to join or sign in, you agree to the terms of the LinkedIn User Agreement, Privacy Policy, and Cookie Policy.</p>
+                    <div><p>Not on LinkedIn?</p><Link to="/Sign-In">Join</Link></div>
                 </div>
                 <div className='Sright'>
-                    <img src={photo} anl='photo'/>
+                    <img src={photo} anl='photo' />
                 </div>
             </div>
             <div>

@@ -1,0 +1,90 @@
+.headerApp {
+    background-color: #6C5CE7;
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 211px;
+    padding-right: 211px;
+    align-items: center;
+}
+
+.logo>img {
+    width: 70px;
+}
+
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+.n1,
+.n2 {
+    padding: 10px 21px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.mainSection {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+    margin-right: 226px;
+}
+
+.Sleft {
+    margin-top: 169px;
+}
+
+.Sright {
+    margin-top: 106px;
+}
+
+.Sleft>h1 {
+    font-size: 64px;
+    width: 621px;
+}
+.Sleft>nav{
+    flex-direction: column;
+}
+
+.Sleft>div {
+    display: flex;
+    gap:5px;
+}
+
+
+.loginGoogle, .loginEmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    border-radius: 52px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.loginGoogle {
+    color: #6C5CE7;
+    border: 1px solid #6C5CE7;
+    background-color: transparent;
+    margin-top: 17px;
+}
+
+
+.loginEmail {
+    color: white;            
+    background-color: #6C5CE7; 
+    border: none; 
+    margin-bottom: 24px;           
+}
+
+.Sleft>p {
+    width: 351px;
+    margin-bottom: 20px;
+}
