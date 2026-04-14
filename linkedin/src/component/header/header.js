@@ -8,8 +8,8 @@ const Header = (props) => (
         </div>
         <div className='nav'>
             <nav>
-                <Link className='n1' to="/Sign-In">Sign In</Link>
-                <Link className='n2' to="/Sign-Up">Sign Up</Link>
+                <Link className='n1' to="/sign-in">Sign In</Link>
+                <Link className='n2' to="/sign-up">Sign Up</Link>
             </nav>
         </div>
     </header>
