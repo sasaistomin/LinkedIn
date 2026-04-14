@@ -6,7 +6,7 @@
   "testLibrary": "None",
   "component": {
     "default": {
-      "path": "src/shared",
+      "path": "src/component",
       "withStyle": true,
       "withTest": false,
       "withStory": false,
