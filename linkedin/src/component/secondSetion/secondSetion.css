@@ -1,0 +1,15 @@
+.secondSetion {
+    height: 400px;
+    background-color: #E7E7E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textLeft {
+    margin-left: 165px;
+}
+
+.listRight {
+    margin-right: 360px;
+}
