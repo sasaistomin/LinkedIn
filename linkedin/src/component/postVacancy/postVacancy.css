@@ -1,0 +1,19 @@
+.postVacancy {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 215px;
+}
+
+.textH {
+    font-size: 48px;
+    margin-bottom: 100px;
+    color: black;
+}
+
+.vacancy {
+    color: black;
+    border: 1px solid #000000;
+    background-color:1;
+    padding: 10px 93.5px;
+    border-radius: 52px;
+}
