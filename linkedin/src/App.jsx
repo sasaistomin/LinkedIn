@@ -32,6 +32,7 @@ function App() {
                 photo={photo}/>
 
             <SecondSetion text={<>Find a suitable vacancy or <br /> internship</>} item={textlist}/>
+            
             {/* <div>
                 <div>
 
