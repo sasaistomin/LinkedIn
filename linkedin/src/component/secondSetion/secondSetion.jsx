@@ -1,14 +1,24 @@
 import './secondSetion.css';
 
+const List = ({ item }) => {
+    return (
+        <>
+            {item.map((word, index) => (
+                <div key={index} className='chip'>{word}</div>
+            ))}
+        </>
+    );
+};
+
 const SecondSetion = (props) => (
     <div className="secondSetion">
         <div className='textLeft'>
-            <h2>{props.text}</h2>
+            <h2 className='text'>{props.text}</h2>
         </div>
         <div className='listRight'>
-            <h1>sddsds</h1>
+            <List item={props.item}/>
         </div>
     </div>
 );
-123123123
+
 export default SecondSetion;
