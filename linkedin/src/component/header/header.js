@@ -4,11 +4,7 @@ import { Link } from 'react-router-dom';
 export function Test()
 {
     return <div>Test</div>
-}
 
-
-
-gbgbgbg
 
 
 const Header = (props) => (
