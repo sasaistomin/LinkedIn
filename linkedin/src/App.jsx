@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom';
 import Header from './component/header/header';
 import FirstSection from './component/firstSection/firstSection';
 import SecondSetion from './component/secondSetion/secondSetion';
+import BtnNewPost from "./component/BtnNewPost/BtnNewPost";
+import React, { useState } from "react";
 
 function App() {
-    return (
+         const [open, setOpen] = useState(false);
+    return ( 
         <div className="App">
             <Header logo={logo} />
 
@@ -29,6 +32,8 @@ function App() {
                 <div className='footerRight'>
 
                 </div>
+              
+     {/* <BtnNewPost /> */}
             </footer>
         </div>
 

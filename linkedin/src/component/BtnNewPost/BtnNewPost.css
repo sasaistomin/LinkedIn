@@ -1,2 +1,90 @@
-.BtnNewPost {}
+.newBtn {
+  padding: 10px 20px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
+/* OVERLAY */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* МОДАЛКА */
+.modalContent {
+  width: 674px;
+  height: 615px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* USER */
+.userRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+/* TEXTAREA */
+.textArea {
+  width: 90%;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+  background: #f3f3f3;
+  padding: 15px;
+  resize: none;
+}
+
+/* ICONS */
+.iconsRow {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* BOTTOM */
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.timeBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.publishBtn {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
