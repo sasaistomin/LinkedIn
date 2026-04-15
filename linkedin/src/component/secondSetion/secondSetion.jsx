@@ -10,5 +10,5 @@ const SecondSetion = (props) => (
         </div>
     </div>
 );
-dasdsadd
+dasdsadd,n
 export default SecondSetion;
