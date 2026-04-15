@@ -5,6 +5,13 @@ export function Test()
 {
     return <div>Test</div>
 }
+export function Test2()
+{
+    return <div>Test2</div>
+}
+
+
+
 
 const Header = (props) => (
     <header className="headerApp">
