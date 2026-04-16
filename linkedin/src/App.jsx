@@ -1,4 +1,8 @@
 import './styles/App.css';
+import React, { useState } from 'react';
+import question from './question.svg';
+import manage from './gearSix.svg';
+import recommended from './'
 import logo from './logo.png';
 import photo from './photo.png';
 import Header from './component/header/header';
@@ -41,7 +45,7 @@ let textInfoFooter = {
 
 let textToolsFooter = {
     'title1': {
-        'logo': {},
+        'logo': question,
         'textH': 'Question?',
         'textP': 'Visit our Help Center.'
     },
@@ -50,15 +54,18 @@ let textToolsFooter = {
         'textH': 'Manage Account and Privacy',
         'textP': 'Go to settings.'
     },
-    
+    'title3': {
+        'logo': {},
+        'textH': 'Recommendation Transparency',
+        'textP': 'Learn more about recommended content.'
+    }
 }
 
 function App() {
-         const [open, setOpen] = useState(false);
-    return ( 
+    const [open, setOpen] = useState(false);
+    return (
         <div className="App">
             <Header logo={logo} />
-
             <FirstSection
                 h1={<>Welcome <br /> to the community specialists!</>}
                 text={<>By clicking "Continue" to join or sign in, you <br /> agree to the terms of the LinkedIn User <br /> Agreement, Privacy Policy, and Cookie Policy.</>}
@@ -71,7 +78,7 @@ function App() {
             <SoftwareTools textH={<>Discover the best <br /> software tools</>} text={<>Connect with buyers who have <br /> first-hand experience to find the <br /> best products for you.</>} item={textTools} />
 
             <ConnectLinkedin text={<>Connect with your colleagues, <br /> classmates and friends on LinkedIn.</>} />
-            
+
             <Footer />
         </div>
 
