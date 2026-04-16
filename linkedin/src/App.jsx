@@ -2,7 +2,7 @@ import './styles/App.css';
 import React, { useState } from 'react';
 import question from './question.svg';
 import manage from './gearSix.svg';
-import recommended from './'
+import recommended from './recommended.svg';
 import logo from './logo.png';
 import photo from './photo.png';
 import Header from './component/header/header';
@@ -50,12 +50,12 @@ let textToolsFooter = {
         'textP': 'Visit our Help Center.'
     },
     'title2': {
-        'logo': {},
+        'logo': manage,
         'textH': 'Manage Account and Privacy',
         'textP': 'Go to settings.'
     },
     'title3': {
-        'logo': {},
+        'logo': recommended,
         'textH': 'Recommendation Transparency',
         'textP': 'Learn more about recommended content.'
     }
