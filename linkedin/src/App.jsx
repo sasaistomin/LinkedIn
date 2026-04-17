@@ -1,5 +1,4 @@
 import './styles/App.css';
-import React, { useState } from 'react';
 import question from './question.svg';
 import manage from './gearSix.svg';
 import recommended from './recommended.svg';
@@ -62,10 +61,10 @@ let textToolsFooter = {
 }
 
 function App() {
-    const [open, setOpen] = useState(false);
     return (
         <div className="App">
             <Header logo={logo} />
+
             <FirstSection
                 h1={<>Welcome <br /> to the community specialists!</>}
                 text={<>By clicking "Continue" to join or sign in, you <br /> agree to the terms of the LinkedIn User <br /> Agreement, Privacy Policy, and Cookie Policy.</>}
