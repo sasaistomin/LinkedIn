@@ -3,3 +3,42 @@
     background-color: #6C5CE7;
     display: flex;
 }
+
+.leftFooter {
+    margin-left: 228.5px;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    width: 709px;
+    gap: 64px;
+    margin-right: 100px;
+    margin-top: 48px;
+}
+
+.right {
+    margin-top: 48px;
+    display: flex;
+    gap: 100px;
+}
+
+.footerText {
+    margin-bottom: 24px;
+}
+
+.toolsRight {
+    display: flex;
+    gap: 12px;
+    color: white;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.toolsRight>img {
+    width: 32px;
+    height: 32px;
+}
+
+.textTools>h4 {
+    margin-bottom: 2px;
+    font-weight: 500;
+}

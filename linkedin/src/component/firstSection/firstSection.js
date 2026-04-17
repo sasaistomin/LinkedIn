@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FirstSection = (props) => (
     <div className='mainSection'>
-        <div className='Sleft'>
+        <div className='Sleft'> 
             <h1>{props.h1}</h1>
             <nav>
                 <Link className='loginGoogle' to='login-google'>Login with Google</Link>

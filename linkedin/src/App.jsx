@@ -44,17 +44,17 @@ let textInfoFooter = {
 
 let textToolsFooter = {
     'title1': {
-        'logo': question,
+        'img': question,
         'textH': 'Question?',
         'textP': 'Visit our Help Center.'
     },
     'title2': {
-        'logo': manage,
+        'img': manage,
         'textH': 'Manage Account and Privacy',
         'textP': 'Go to settings.'
     },
     'title3': {
-        'logo': recommended,
+        'img': recommended,
         'textH': 'Recommendation Transparency',
         'textP': 'Learn more about recommended content.'
     }
@@ -78,7 +78,7 @@ function App() {
 
             <ConnectLinkedin text={<>Connect with your colleagues, <br /> classmates and friends on LinkedIn.</>} />
 
-            <Footer />
+            <Footer info={textInfoFooter} tools={textToolsFooter} text='Language'  language='English'/>
         </div>
 
     );

@@ -1,12 +1,13 @@
 import './secondSetion.css';
+import { Link } from 'react-router-dom';
 
 const List = ({ item }) => {
     return (
-        <>
+        <Link to='login'>
             {item.map((word, index) => (
                 <div key={index} className='chip'>{word}</div>
             ))}
-        </>
+        </Link>
     );
 };
 
