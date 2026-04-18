@@ -4,6 +4,7 @@ import manage from './gearSix.svg';
 import recommended from './recommended.svg';
 import logo from './logo.png';
 import photo from './photo.png';
+import lanIcon from './lanIcon.svg';
 import Header from './component/header/header';
 import FirstSection from './component/firstSection/firstSection';
 import SecondSetion from './component/secondSetion/secondSetion';
@@ -78,7 +79,7 @@ function App() {
 
             <ConnectLinkedin text={<>Connect with your colleagues, <br /> classmates and friends on LinkedIn.</>} />
 
-            <Footer info={textInfoFooter} tools={textToolsFooter} text='Language'  language='English'/>
+            <Footer info={textInfoFooter} tools={textToolsFooter} text='Language'  language='English' icon={lanIcon}/>
         </div>
 
     );

@@ -42,15 +42,15 @@ const Footer = (props) => (
                 <OutputLeft leftList={props.info.info3} />
             </div>
         </div>
-        <div className='right'>
-            <div>
+        <div className='rightFooter'>
+            <div className='tools'>
                 <OutLeftRight rightList={props.tools} />
             </div>
             <div className='lan'>
-                <p className='text'>{props.text}</p>
+                <p className='textLan'>{props.text}</p>
                 <div className='language'>
                     <p>{props.language}</p>
-                    <img src={props} alt="" />
+                    <img src={props.icon} alt="sda" />
                 </div>
             </div>
         </div>
