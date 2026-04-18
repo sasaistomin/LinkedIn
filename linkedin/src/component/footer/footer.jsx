@@ -47,10 +47,10 @@ const Footer = (props) => (
                 <OutLeftRight rightList={props.tools} />
             </div>
             <div className='lan'>
-                <p>{props.text}</p>
-                <div className=''>
+                <p className='text'>{props.text}</p>
+                <div className='language'>
                     <p>{props.language}</p>
-                    <img src="" alt="" />
+                    <img src={props} alt="" />
                 </div>
             </div>
         </div>
