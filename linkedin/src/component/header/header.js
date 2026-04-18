@@ -10,7 +10,7 @@ export function Test()
 const Header = (props) => (
     <header className="headerApp">
         <div className='logo'>
-            <Link to='pofile'>
+            <Link to='/'>
                 <img src={props.logo} alt='logo' />
             </Link>
         </div>

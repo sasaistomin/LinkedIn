@@ -12,6 +12,8 @@ import PostVacancy from './component/postVacancy/postVacancy';
 import SoftwareTools from './component/softwareTools/softwareTools';
 import ConnectLinkedin from './component/connectLinkedin/connectLinkedin';
 import Footer from './component/footer/footer';
+import SingIn from './pages/Login/singIn'
+import { Routes, Route } from 'react-router-dom';
 
 let textlist = [
     'Engineering',
@@ -63,25 +65,24 @@ let textToolsFooter = {
 
 function App() {
     return (
-        <div className="App">
-            <Header logo={logo} />
+        <Routes>
+                <Route path='/' element={
+                    <>
+                        <Header logo={logo} />
+                        <FirstSection
+                            h1={<>Welcome <br /> to the community specialists!</>}
+                            text={<>By clicking "Continue" to join or sign in, you <br /> agree to the terms of the LinkedIn User <br /> Agreement, Privacy Policy, and Cookie Policy.</>}
+                            photo={photo} />
+                        <SecondSetion text={<>Find a suitable vacancy or <br /> internship</>} item={textlist} />
+                        <PostVacancy text='Post your vacancy so millions of people can see it' textLink='Post a vacancy' />
+                        <SoftwareTools textH={<>Discover the best <br /> software tools</>} text={<>Connect with buyers who have <br /> first-hand experience to find the <br /> best products for you.</>} item={textTools} />
+                        <ConnectLinkedin text={<>Connect with your colleagues, <br /> classmates and friends on LinkedIn.</>} />
+                        <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
+                    </>
+                }/>
+                <Route path='/sign-in' element={<SingIn img={logo}/>} />
 
-            <FirstSection
-                h1={<>Welcome <br /> to the community specialists!</>}
-                text={<>By clicking "Continue" to join or sign in, you <br /> agree to the terms of the LinkedIn User <br /> Agreement, Privacy Policy, and Cookie Policy.</>}
-                photo={photo} />
-
-            <SecondSetion text={<>Find a suitable vacancy or <br /> internship</>} item={textlist} />
-
-            <PostVacancy text='Post your vacancy so millions of people can see it' textLink='Post a vacancy' />
-
-            <SoftwareTools textH={<>Discover the best <br /> software tools</>} text={<>Connect with buyers who have <br /> first-hand experience to find the <br /> best products for you.</>} item={textTools} />
-
-            <ConnectLinkedin text={<>Connect with your colleagues, <br /> classmates and friends on LinkedIn.</>} />
-
-            <Footer info={textInfoFooter} tools={textToolsFooter} text='Language'  language='English' icon={lanIcon}/>
-        </div>
-
+        </Routes>
     );
 }
 
