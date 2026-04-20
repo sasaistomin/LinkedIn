@@ -12,6 +12,7 @@ const TopSingIn = (props) => (
                 <input placeholder={ props.textEmail } />
             </div>
         </div>
+        
     </div>
 );
 

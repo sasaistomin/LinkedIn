@@ -8,6 +8,7 @@ const SingIn = (props) => {
             <div className='logo'>
                 <img src={props.img} alt="" />
             </div>
+            
             <div className='singIn-hero'>
                 <TopSingIn welcomeText='Welcome back' 
                 singInText='sign in your LinkUp account' 
