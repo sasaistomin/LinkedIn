@@ -9,14 +9,16 @@ const SingIn = (props) => {
                 <img src={props.img} alt="" />
             </div>
             <div className='singIn-hero'>
-                <TopSingIn welcomeText='' 
-                singInText='' 
-                emailIcom={}
-                passwordIcon={} 
-                lockPasswordIcon={} 
-                linkText='' 
-                resetPasswordP='' 
-                resetPasswordSpan=''/>
+                <TopSingIn welcomeText='Welcome back' 
+                singInText='sign in your LinkUp account' 
+                emailIcom={props.emailIcom}
+                textEmail='Email or phone number'
+                textPassword='Password'
+                passwordIcon={props.passwordIcon} 
+                lockPasswordIcon={props.lockPasswordIcon} 
+                linkText='Sign In' 
+                resetPasswordP='Forgot your password?' 
+                resetPasswordSpan='Reset password'/>
             </div>
         </div>
     );

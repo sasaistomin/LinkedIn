@@ -5,6 +5,9 @@ import recommended from './recommended.svg';
 import logo from './logo.png';
 import photo from './photo.png';
 import lanIcon from './lanIcon.svg';
+import emailIcom from './email.svg';
+import key from './key.svg';
+import eye from './eye.svg';
 import Header from './component/header/header';
 import FirstSection from './component/firstSection/firstSection';
 import SecondSetion from './component/secondSetion/secondSetion';
@@ -66,21 +69,21 @@ let textToolsFooter = {
 function App() {
     return (
         <Routes>
-                <Route path='/' element={
-                    <>
-                        <Header logo={logo} />
-                        <FirstSection
-                            h1={<>Welcome <br /> to the community specialists!</>}
-                            text={<>By clicking "Continue" to join or sign in, you <br /> agree to the terms of the LinkedIn User <br /> Agreement, Privacy Policy, and Cookie Policy.</>}
-                            photo={photo} />
-                        <SecondSetion text={<>Find a suitable vacancy or <br /> internship</>} item={textlist} />
-                        <PostVacancy text='Post your vacancy so millions of people can see it' textLink='Post a vacancy' />
-                        <SoftwareTools textH={<>Discover the best <br /> software tools</>} text={<>Connect with buyers who have <br /> first-hand experience to find the <br /> best products for you.</>} item={textTools} />
-                        <ConnectLinkedin text={<>Connect with your colleagues, <br /> classmates and friends on LinkedIn.</>} />
-                        <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
-                    </>
-                }/>
-                <Route path='/sign-in' element={<SingIn img={logo}/>} />
+            <Route path='/' element={
+                <>
+                    <Header logo={logo} />
+                    <FirstSection
+                        h1={<>Welcome <br /> to the community specialists!</>}
+                        text={<>By clicking "Continue" to join or sign in, you <br /> agree to the terms of the LinkedIn User <br /> Agreement, Privacy Policy, and Cookie Policy.</>}
+                        photo={photo} />
+                    <SecondSetion text={<>Find a suitable vacancy or <br /> internship</>} item={textlist} />
+                    <PostVacancy text='Post your vacancy so millions of people can see it' textLink='Post a vacancy' />
+                    <SoftwareTools textH={<>Discover the best <br /> software tools</>} text={<>Connect with buyers who have <br /> first-hand experience to find the <br /> best products for you.</>} item={textTools} />
+                    <ConnectLinkedin text={<>Connect with your colleagues, <br /> classmates and friends on LinkedIn.</>} />
+                    <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
+                </>
+            } />
+            <Route path='/sign-in' element={<SingIn img={logo} emailIcom={emailIcom} passwordIcon={key} lockPasswordIcon={eye} />} />
 
         </Routes>
     );

@@ -12,7 +12,9 @@
 }
 
 .singIn-hero {
-    background-color: rgb(255, 0, 0);
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
     width: 512px;
     height: 630px;
     display: grid;

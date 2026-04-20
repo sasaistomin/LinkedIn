@@ -6,7 +6,7 @@ const PostVacancy = (props) => (
         <div>
             <h2 className='textH'>P{props.text}</h2>
 
-            <Link to='vacancy' className='vacancy'>{props.textLink}</Link>
+            <Link to='/sing-in' className='vacancy'>{props.textLink}</Link>
         </div>
     </div>
 );
