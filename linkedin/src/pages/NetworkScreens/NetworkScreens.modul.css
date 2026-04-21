@@ -12,14 +12,16 @@ body {
   min-height: 100vh;
 }
 
+
 .header {
-  height: 70px;
+  min-height: 70px;
   background: linear-gradient(90deg, #6c63ff, #8e7dff);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 10px 30px;
   color: white;
+  flex-wrap: wrap;
 }
 
 .header-left {
@@ -29,15 +31,16 @@ body {
 }
 
 .logo {
-  margin-right: 150%;
-  margin-left: 15%;
+  margin-right: 20px;
 }
 
 .search {
   width: 300px;
+  max-width: 100%;
   padding: 8px 12px;
   border-radius: 20px;
   border: none;
+  margin-left: 150%;
 }
 
 .header-nav {
@@ -56,25 +59,13 @@ body {
   font-weight: bold;
 }
 
-.avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #ddd;
-  margin: 0 auto 10px;
-}
-
-.avatar.small {
-  width: 35px;
-  height: 35px;
-  margin: 0;
-}
 
 .container {
   display: flex;
   gap: 20px;
   padding: 20px 30px;
 }
+
 
 .left {
   width: 260px;
@@ -86,7 +77,6 @@ body {
 .left h4 {
   margin-bottom: 15px;
   color: #6C5CE7;
-    font: Rubik;
 }
 
 .left ul {
@@ -98,6 +88,7 @@ body {
   padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
+
 
 .center {
   flex: 1;
@@ -125,10 +116,11 @@ body {
 
 .title {
   text-align: center;
-  font-size: 100%;
+  font-size: 16px;
   color: #6c63ff;
   margin-bottom: 20px;
 }
+
 
 .grid {
   display: grid;
@@ -136,11 +128,21 @@ body {
   gap: 15px;
 }
 
+
 .card {
   background: white;
   padding: 20px;
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
 .card h4 {
@@ -161,6 +163,21 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
+
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .right {
   width: 280px;
@@ -187,14 +204,6 @@ body {
   margin-top: 40px;
 }
 
-.envelope {
-  width: 80px;
-  height: 60px;
-  background: #e6e4ff;
-  margin: 0 auto 15px;
-  border-radius: 10px;
-}
-
 .outline {
   margin-top: 10px;
   padding: 8px 14px;
@@ -202,4 +211,118 @@ body {
   border: 1px solid #333;
   border-radius: 8px;
   cursor: pointer;
+}
+
+
+.avatar-wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.status {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 16px;
+  height: 16px;
+  background: #00B871;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search {
+    width: 200px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .header-left {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-nav {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .avatar-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 14px;
+  }
+
+  .card h4 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card button {
+    width: 100%;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
