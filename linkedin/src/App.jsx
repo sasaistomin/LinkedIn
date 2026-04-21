@@ -11,13 +11,15 @@ import eye from './eye.svg';
 import Header from './component/header/header';
 import FirstSection from './component/firstSection/firstSection';
 import SecondSetion from './component/secondSetion/secondSetion';
+import BtnNewPost from "./component/BtnNewPost/BtnNewPost";
+import React, { useState } from "react";
+import NetworkScreens from "./pages/NetworkScreens/NetworkScreens";
 import PostVacancy from './component/postVacancy/postVacancy';
 import SoftwareTools from './component/softwareTools/softwareTools';
 import ConnectLinkedin from './component/connectLinkedin/connectLinkedin';
 import Footer from './component/footer/footer';
 import SingIn from './pages/Login/singIn'
 import { Routes, Route } from 'react-router-dom';
-// import BtnNewPost from './component/BtnNewPost/BtnNewPost';
 
 let textlist = [
     'Engineering',
@@ -85,6 +87,7 @@ function App() {
                 </>
             } />
             <Route path='/sign-in' element={<SingIn img={logo} emailIcom={emailIcom} passwordIcon={key} lockPasswordIcon={eye} />} />
+
 
         </Routes>
     );
