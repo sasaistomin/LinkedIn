@@ -1,4 +1,4 @@
-import './styles/App.css';
+// import './styles/App.module.css';
 import question from './question.svg';
 import manage from './gearSix.svg';
 import recommended from './recommended.svg';
