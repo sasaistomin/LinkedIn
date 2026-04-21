@@ -20,6 +20,11 @@ const SingIn = (props) => {
                 linkText='Sign In' 
                 resetPasswordP='Forgot your password?' 
                 resetPasswordSpan='Reset password'/>
+                <div>
+                    <span></span>
+                    <p></p>
+                    <span></span>
+                </div>
             </div>
         </div>
     );
