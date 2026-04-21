@@ -12,7 +12,7 @@ const SingIn = (props) => {
             <div className='singIn-hero'>
                 <TopSingIn welcomeText='Welcome back' 
                 singInText='sign in your LinkUp account' 
-                emailIcom={props.emailIcom}
+                emailIcon={props.emailIcom}
                 textEmail='Email or phone number'
                 textPassword='Password'
                 passwordIcon={props.passwordIcon} 
@@ -20,6 +20,11 @@ const SingIn = (props) => {
                 linkText='Sign In' 
                 resetPasswordP='Forgot your password?' 
                 resetPasswordSpan='Reset password'/>
+                <div>
+                    <span></span>
+                    <p></p>
+                    <span></span>
+                </div>
             </div>
         </div>
     );
