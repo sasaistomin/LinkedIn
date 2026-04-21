@@ -1,0 +1,36 @@
+.softwareTools {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.left {
+    margin-left: 181px;
+}
+
+.left>h2 {
+    font-size: 48px;
+}
+
+.left>p {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.right {
+    width: 488px;
+    margin-right: 314px;
+}
+
+.chipTools { 
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    border-radius: 52px;
+    background-color: white ;
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
