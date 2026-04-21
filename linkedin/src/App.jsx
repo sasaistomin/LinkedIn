@@ -17,6 +17,7 @@ import ConnectLinkedin from './component/connectLinkedin/connectLinkedin';
 import Footer from './component/footer/footer';
 import SingIn from './pages/Login/singIn'
 import { Routes, Route } from 'react-router-dom';
+// import BtnNewPost from './component/BtnNewPost/BtnNewPost';
 
 let textlist = [
     'Engineering',
