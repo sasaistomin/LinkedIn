@@ -4,15 +4,15 @@
     margin-bottom: 96px;
 }
 
-.left {
+.leftTools {
     margin-left: 181px;
 }
 
-.left>h2 {
+.leftTools>h2 {
     font-size: 48px;
 }
 
-.left>p {
+.leftTools>p {
     margin-bottom: 20px;
     font-size: 36px;
 }

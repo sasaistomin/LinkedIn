@@ -13,7 +13,7 @@ const List = ({ item }) => {
 
 const SoftwareTools = (props) => (
     <div className="softwareTools">
-        <div className='left'>
+        <div className='leftTools'>
             <h2>{props.textH}</h2>
             <p>{props.text}</p>
         </div>
