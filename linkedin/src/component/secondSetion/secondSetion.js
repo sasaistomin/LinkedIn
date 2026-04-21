@@ -11,15 +11,17 @@ const List = ({ item }) => {
     );
 };
 
-const SecondSetion = (props) => (
-    <div className="secondSetion">
-        <div className='textLeft'>
-            <h2 className='text'>{props.text}</h2>
+const SecondSetion = (props) => {
+    return (
+        <div className="secondSetion">
+            <div className='textLeft'>
+                <h2 className='text'>{props.text}</h2>
+            </div>
+            <div className='listRight'>
+                <List item={props.item}/>
+            </div>
         </div>
-        <div className='listRight'>
-            <List item={props.item}/>
-        </div>
-    </div>
-);
+    );
+};
 
 export default SecondSetion;
