@@ -1,9 +1,82 @@
+import Header from "../../component/header/header";
+import FirstSection from "../../component/firstSection/firstSection";
+import SecondSetion from "../../component/secondSetion/secondSetion";
+import PostVacancy from "../../component/postVacancy/postVacancy";
+import SoftwareTools from "../../component/softwareTools/softwareTools";
+import ConnectLinkedin from "../../component/connectLinkedin/connectLinkedin";
+import Footer from "../../component/footer/footer";
+import React from "react";
+import question from '../../question.svg';
+import manage from '../../gearSix.svg';
+import recommended from '../../recommended.svg';
+import logo from '../../logo.png';
+import photo from '../../photo.png';
+import lanIcon from '../../lanIcon.svg';
+import emailIcon from '../../email.svg'
+import key from '../../key.svg';
 
+
+let textlist = [
+    'Engineering',
+    'Business development',
+    'Finance',
+    'Administrative Assistant',
+    'Retail employee',
+    'Help Desk',
+    'Operations',
+    'Information Technology',
+    'Marketing',
+    'Personnel support',
+    'Education',
+    'Sales'
+];
+
+let textTools = [
+    'E-commerce platforms',
+    'Recruiting Software',
+    'Software for CRM systems',
+    'Social Networking Software',
+    'HR systems',
+    'Project Management Software'
+];
+
+export let textInfoFooter = {
+    'info1': ['General information', 'Careers', 'Add Settings', 'Security Center'],
+    'info2': ['Accessibility', 'Privacy and Terms', 'Mobile Phone'],
+    'info3': ['Policies for the Professional Community', 'Sales Solutions', 'Advertising Solutions']
+}
+
+export let textToolsFooter = {
+    'title1': {
+        'img': question,
+        'textH': 'Question?',
+        'textP': 'Visit our Help Center.'
+    },
+    'title2': {
+        'img': manage,
+        'textH': 'Manage Account and Privacy',
+        'textP': 'Go to settings.'
+    },
+    'title3': {
+        'img': recommended,
+        'textH': 'Recommendation Transparency',
+        'textP': 'Learn more about recommended content.'
+    }
+}
 
 const Home = () => (
-  <div>
-    Home Component
-  </div>
+    <div>
+        <Header logo={logo} />
+        <FirstSection
+            h1={<>Welcome <br /> to the community specialists!</>}
+            text={<>By clicking "Continue" to join or sign in, you <br /> agree to the terms of the LinkedIn User <br /> Agreement, Privacy Policy, and Cookie Policy.</>}
+            photo={photo} />
+        <SecondSetion text={<>Find a suitable vacancy or <br /> internship</>} item={textlist} />
+        <PostVacancy text='Post your vacancy so millions of people can see it' textLink='Post a vacancy' />
+        <SoftwareTools textH={<>Discover the best <br /> software tools</>} text={<>Connect with buyers who have <br /> first-hand experience to find the <br /> best products for you.</>} item={textTools} />
+        <ConnectLinkedin text={<>Connect with your colleagues, <br /> classmates and friends on LinkedIn.</>} />
+        <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
+    </div>
 );
 
 export default Home;
