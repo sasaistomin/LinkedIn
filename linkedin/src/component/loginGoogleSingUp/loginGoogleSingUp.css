@@ -1,0 +1,29 @@
+.loginGoogleSingUp {
+    margin: 0 auto;
+}
+
+.linkGoogle, .linkSingUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 416px;
+    height: 54px;
+    border-radius: 8px;
+    border: 1.5px solid #6C5CE7;
+    color: black;
+}
+
+.linkGoogle > p, .linkSingUp > p {
+    font-weight: 600;
+}
+
+.linkGoogle:hover, .linkSingUp:hover {
+    background-color: #A29BFE;
+    color: white;
+}
+
+.linkSingUp {
+    margin-top: 14px;
+    margin-bottom: 48px;
+}
