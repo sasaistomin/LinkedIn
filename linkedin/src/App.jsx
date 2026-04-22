@@ -1,11 +1,11 @@
-import './styles/App.css';
+// import './styles/App.module.css';
 import question from './question.svg';
 import manage from './gearSix.svg';
 import recommended from './recommended.svg';
 import logo from './logo.png';
 import photo from './photo.png';
 import lanIcon from './lanIcon.svg';
-import emailIcom from './email.svg';
+import emailIcon from './email.svg'
 import key from './key.svg';
 import eye from './eye.svg';
 import Header from './component/header/header';
@@ -86,7 +86,7 @@ function App() {
                     <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
                 </>
             } />
-            <Route path='/sign-in' element={<SingIn img={logo} emailIcom={emailIcom} passwordIcon={key} lockPasswordIcon={eye} />} />
+            <Route path='/sign-in' element={<SingIn img={logo} emailIcom={emailIcon} passwordIcon={key} lockPasswordIcon={eye} />} />
 
 
         </Routes>

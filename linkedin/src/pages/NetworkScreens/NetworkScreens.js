@@ -1,4 +1,4 @@
-import "./NetworkScreens.modul.css";
+import "./NetworkScreens.css";
 import { Link } from "react-router-dom";
 import img1 from "../../assets/1.webp";
 import img2 from "../../assets/2.webp";
