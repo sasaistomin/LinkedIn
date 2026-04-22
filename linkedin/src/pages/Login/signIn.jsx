@@ -11,7 +11,6 @@ const SignIn = (props) => {
             <Link to='/' className='logo'>
                 <img src={props.img} alt="" />
             </Link>
-
             <div className='singIn-hero'>
                 <TopSingIn welcomeText='Welcome back'
                     singInText='sign in your LinkUp account'
@@ -29,7 +28,10 @@ const SignIn = (props) => {
                     <p>or</p>
                     <span></span>
                 </div>
-                <LoginGoogleSingUp googleIcon={props.googleIcon} textGoogle='Continue with Google' textSingUp='Sign Up' />
+                <LoginGoogleSingUp
+                    googleIcon={props.googleIcon}
+                    textGoogle='Continue with Google' t
+                    textSingUp='Sign Up' />
             </div>
         </div>
     );

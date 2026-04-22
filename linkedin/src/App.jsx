@@ -13,8 +13,20 @@ function App() {
     return (
         <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/sign-in' element={<SignIn img={logo} emailIcom={emailIcon} passwordIcon={key} lockPasswordIcon={eye} lockEye={lockEye} googleIcon={googleIcon}/>}/>
-            <Route path='/nextStepSingIn' element={<EndSingIn img={logo}/>} />
+            <Route path='/sign-in' element={<SignIn
+                img={logo}
+                emailIcom={emailIcon}
+                passwordIcon={key}
+                lockPasswordIcon={eye}
+                lockEye={lockEye}
+                googleIcon={googleIcon} />} />
+            <Route path='/nextStepSingIn' element={<EndSingIn
+                img={logo}
+                textP='One more step'
+                textH='enter the authentication code'
+                linkSub='Submit' 
+                dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
+                back='Back'/>} />
         </Routes>
     );
 }

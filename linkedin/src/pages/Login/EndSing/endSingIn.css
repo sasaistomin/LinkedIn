@@ -1,0 +1,102 @@
+.singInHeroEnd {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 546px;
+    display: grid;
+    margin: 0 auto;
+}
+
+.singInHeroEnd>div {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.headText {
+    margin-top: 36.5px;
+}
+
+.headText>p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.headText>h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.inputSignIn {
+    display: flex;
+    gap: 14px;
+    margin-top: 36px;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.inputSignIn>input {
+    height: 78px;
+    width: 50px;
+    border: 1.5px solid #6C5CE7;
+    border-radius: 8px;
+    font-size: 25px;
+    text-align: center;   
+    line-height: 78px;   
+    box-sizing: border-box;  
+}
+
+.inputSignIn>input:focus {
+    outline: none;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 100%;
+    background-color: #6C5CE7;
+    color: white;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.submit>p {
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: #A29BFE;
+}
+
+
+.subDontCodeBack>p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 36px;
+}
+
+.sendCode {
+    color: #6C5CE7;
+    text-decoration: underline;
+}
+
+
+.backSignIn {
+    border: 1.5px solid #6C5CE7;
+    width: 208px;
+    height: 54px;
+    display: grid;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.backSignIn>p {
+    color: black;
+}
+
+.singInHeroEnd>a {
+    margin: 0 auto;
+    margin-bottom: 36.5px;
+}

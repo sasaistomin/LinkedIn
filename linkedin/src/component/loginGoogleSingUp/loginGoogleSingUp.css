@@ -21,6 +21,7 @@
 .linkGoogle:hover, .linkSingUp:hover {
     background-color: #A29BFE;
     color: white;
+    border: 1.5px solid #A29BFE;
 }
 
 .linkSingUp {
