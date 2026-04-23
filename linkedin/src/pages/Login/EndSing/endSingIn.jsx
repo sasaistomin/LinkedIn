@@ -48,7 +48,7 @@ const EndSingIn = (props) => {
                     </Link>
                     <p>{props.dontCodeP} <Link className='sendCode'>{props.dontCodeSpan}</Link></p>
                 </div>
-                <Link to='/sign-up' className='backSignIn'>
+                <Link to='/sign-in' className='backSignIn'>
                     <p>{props.back}</p>
                 </Link>
             </div>

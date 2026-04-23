@@ -1,3 +1,8 @@
+import './endSingIn.css'
+import { Link } from 'react-router-dom';
+import { useRef } from 'react';
+import LogoTopSign from '../../../component/logoTopSign/logoTopSign';
+
 const EndSingIn = (props) => {
     const inputRefs = useRef([]);
 
@@ -43,7 +48,7 @@ const EndSingIn = (props) => {
                     </Link>
                     <p>{props.dontCodeP} <Link className='sendCode'>{props.dontCodeSpan}</Link></p>
                 </div>
-                <Link to='/sign-in' className='backSignIn'>
+                <Link to='/sign-up' className='backSignIn'>
                     <p>{props.back}</p>
                 </Link>
             </div>

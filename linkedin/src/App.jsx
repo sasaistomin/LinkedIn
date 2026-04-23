@@ -8,6 +8,7 @@ import eye from './eye.svg';
 import lockEye from './lockEye.svg';
 import googleIcon from './google.svg';
 import EndSingIn from './pages/Login/EndSing/endSingIn';
+import EndSingUp from './pages/Login/EndSing/endSingUp';
 import SignUp from './pages/Login/signUp';
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
                 lockPasswordIcon={eye}
                 lockEye={lockEye}
                 googleIcon={googleIcon} />} />
-            <Route path='/nextStepSingUp' element={<EndSingIn
+            <Route path='/nextStepSingUp' element={<EndSingUp
                 img={logo}
                 textP='One last step'
                 textH='enter the verification code'
