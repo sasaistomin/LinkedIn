@@ -62,13 +62,9 @@
     height: 50px;
     border: 1.5px solid #6C5CE7;
     border-radius: 8px;
-    margin-bottom: 36px;
+    margin-bottom: 14px;
 }
 
-.passwordInput {
-    display: flex;
-    align-items: center;
-}
 
 .lock {
     width: 24px;
@@ -127,4 +123,34 @@
 .resetPassword>a {
     color: #6C5CE7;
     text-decoration: underline;
+}
+
+.passwordInputCheck {
+    width: 416px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 50px;
+    border: 1.5px solid #6C5CE7;
+    border-radius: 8px;
+    margin-bottom: 36px;   
+}
+
+.passwordInputCheck>input {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    border: 10px;
+    color: #6C5CE7;
+    border: none;
+    background-color: transparent;
+}
+
+.passwordInputCheck>input::placeholder {
+    color: #6C5CE7;
+    opacity: 1;
+}
+
+.passwordInputCheck>input:focus {
+    outline: none;
 }

@@ -6,23 +6,25 @@ import './singIn.css';
 import { Link } from 'react-router-dom';
 
 
-const SignIn = (props) => {
+
+const SignUp = (props) => {
     return (
         <div className='mainHero'>
             <LogoTopSign img={props.img} />
             <div className='singIn-hero'>
-                <TopSingIn welcomeText='Welcome back'
-                    singInText='sign in your LinkUp account'
+                <TopSingIn welcomeText='Welcome to your'
+                    singInText='professional community'
                     emailIcon={props.emailIcom}
                     textEmail='Email or phone number'
                     textPassword='Password'
+                    textConfirmPassword='Confirm password'
                     passwordIcon={props.passwordIcon}
                     lockPasswordIcon={props.lockPasswordIcon}
                     lockEye={props.lockEye}
-                    stepSignIn='/nextStepSingIn'
-                    linkText='Sign In'
-                    resetPasswordP='Forgot your password?'
-                    resetPasswordSpan='Reset password' />
+                    stepSignIn='/nextStepSingUp'
+                    linkText='Sign Up'
+                    resetPasswordP='By Signing Up, you agree to our'
+                    resetPasswordSpan='Terms of Service and Privacy Policy' />
                 <div className='orAndSpan'>
                     <span></span>
                     <p>or</p>
@@ -31,11 +33,11 @@ const SignIn = (props) => {
                 <LoginGoogleSingUp
                     googleIcon={props.googleIcon}
                     textGoogle='Continue with Google' t
-                    textSingUp='Sign Up'
-                    linkSing='/sign-up' />
+                    textSingUp='Sign In'
+                    linkSing='/sign-in' />
             </div>
         </div>
     );
 }
 
-export default SignIn;
+export default SignUp;

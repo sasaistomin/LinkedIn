@@ -8,7 +8,7 @@ const LoginGoogleSingUp = (props) => (
             <img src={props.googleIcon} alt="google" />
             <p>{props.textGoogle}</p>
         </Link>
-        <Link to='profile' className='linkSingUp'>
+        <Link to={props.linkSing} className='linkSingUp'>
             <p>{props.textSingUp}</p>
         </Link>
     </div>

@@ -8,6 +8,7 @@ import eye from './eye.svg';
 import lockEye from './lockEye.svg';
 import googleIcon from './google.svg';
 import EndSingIn from './pages/Login/EndSing/endSingIn';
+import SignUp from './pages/Login/signUp';
 
 function App() {
     return (
@@ -24,6 +25,20 @@ function App() {
                 img={logo}
                 textP='One more step'
                 textH='enter the authentication code'
+                linkSub='Submit' 
+                dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
+                back='Back'/>} />
+            <Route path='/sign-up' element={<SignUp
+                img={logo}
+                emailIcom={emailIcon}
+                passwordIcon={key}
+                lockPasswordIcon={eye}
+                lockEye={lockEye}
+                googleIcon={googleIcon} />} />
+            <Route path='/nextStepSingUp' element={<EndSingIn
+                img={logo}
+                textP='One last step'
+                textH='enter the verification code'
                 linkSub='Submit' 
                 dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
                 back='Back'/>} />
