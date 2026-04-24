@@ -1,4 +1,4 @@
-import './topSingIn.css';
+import './topSign.css';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
@@ -20,7 +20,7 @@ const ChekitInput = (props) => {
     }
 };
 
-const TopSingIn = (props) => {
+const TopSign = (props) => {
     const [setVievPassword, setLockPassword] = useState(false);
     const toblerPassword = () => {
         setLockPassword(!setVievPassword)
@@ -59,4 +59,5 @@ const TopSingIn = (props) => {
 };
 
 
-export default TopSingIn;
+export default TopSign;
+

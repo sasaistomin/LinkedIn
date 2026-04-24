@@ -1,7 +1,6 @@
-import LoginGoogleSingUp from '../../component/loginGoogleSingUp/loginGoogleSingUp';
+import LoginGoogleSign from '../../component/loginGoogleSign/loginGoogleSign';
 import LogoTopSign from '../../component/logoTopSign/logoTopSign';
-import TopSingIn from '../../component/topSingIn/topSingIn';
-import EndSingIn from './EndSing/endSingIn';
+import TopSign from '../../component/topSign/topSign';
 import './singIn.css';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,7 @@ const SignUp = (props) => {
         <div className='mainHero'>
             <LogoTopSign img={props.img} />
             <div className='singIn-hero'>
-                <TopSingIn welcomeText='Welcome to your'
+                <TopSign welcomeText='Welcome to your'
                     singInText='professional community'
                     emailIcon={props.emailIcom}
                     textEmail='Email or phone number'
@@ -30,7 +29,7 @@ const SignUp = (props) => {
                     <p>or</p>
                     <span></span>
                 </div>
-                <LoginGoogleSingUp
+                <LoginGoogleSign
                     googleIcon={props.googleIcon}
                     textGoogle='Continue with Google' t
                     textSingUp='Sign In'

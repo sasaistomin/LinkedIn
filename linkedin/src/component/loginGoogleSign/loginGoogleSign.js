@@ -1,9 +1,8 @@
+import './loginGoogleSign.css';
 import { Link } from 'react-router-dom';
-import './loginGoogleSingUp.css';
 
-
-const LoginGoogleSingUp = (props) => (
-    <div className="loginGoogleSingUp">
+const LoginGoogleSign= (props) => (
+    <div className="loginGoogleSign">
         <Link to='profile' className='linkGoogle'>
             <img src={props.googleIcon} alt="google" />
             <p>{props.textGoogle}</p>
@@ -14,4 +13,4 @@ const LoginGoogleSingUp = (props) => (
     </div>
 );
 
-export default LoginGoogleSingUp;
+export default LoginGoogleSign;
