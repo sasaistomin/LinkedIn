@@ -3,20 +3,29 @@
     height: 100vh;
 }
 
-.logo>img {
-    margin-left: 48px;
-    margin-top: 48px;
-    width: 96px;
-    height: 96px;
-    margin-bottom: 81px;
-}
 
 .singIn-hero {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     width: 512px;
-    height: 630px;
+    /* height: 630px; */
     display: grid;
     margin: 0 auto;
+    
+}
+
+.orAndSpan {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 19.1px;
+    margin-bottom: 32px;
+}
+
+.orAndSpan>span {
+    width: 172.86px;
+    border-top: 0.5px solid #2D3436;
+    display: block;
 }
