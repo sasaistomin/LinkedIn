@@ -10,6 +10,7 @@ import googleIcon from './google.svg';
 import EndSingIn from './pages/Login/EndSing/endSingIn';
 import EndSingUp from './pages/Login/EndSing/endSingUp';
 import SignUp from './pages/Login/signUp';
+import HomeScreen from './pages/HomeScreen/homeScreen';
 
 function App() {
     return (
@@ -43,6 +44,7 @@ function App() {
                 linkSub='Submit'
                 dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
                 back='Back' />} />
+            <Route path='/mainScreen' element={<HomeScreen logo={logo} />} />
         </Routes>
     );
 }
