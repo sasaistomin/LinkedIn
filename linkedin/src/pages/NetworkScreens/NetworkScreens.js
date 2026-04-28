@@ -5,14 +5,16 @@ import img2 from "../../assets/2.webp";
 import img3 from "../../assets/3.webp";
 import img4 from "../../assets/4.webp";
 import img5 from "../../assets/5.webp";
+import img6 from "../../assets/6.webp";
 import img777 from "../../assets/777.png";
 import { useState } from "react";
 const users = [
-  { name: "David Jonson", role: "Lead UI/UX Designer", avatar: img1 },
-  { name: "Duncan Callahan", role: "Lead UI/UX Designer", avatar: img2 },
+  { name: "David Jonson", role: "Senior Full-Stack Developer", avatar: img1 },
+  { name: "Duncan Callahan", role: "Senior Product Manager", avatar: img2 },
   { name: "Joshua Cortez", role: "UI/UX Designer", avatar: img3 },
-  { name: "Jimmy O’Brian", role: "UI/UX Designer", avatar: img4 },
-  { name: "Miles Morales", role:"UI/UX Designer", avatar:img5}
+  { name: "Jimmy O’Brian", role: "Front-End Developer", avatar: img4 },
+  { name: "Miles Morales", role:"UI/UX Designer", avatar:img5},
+  {name: "Pable Escobaro", role: "Senior React Developer", avatar:img6}
 ];
 
 export default function NetworkScreens() {
@@ -215,7 +217,7 @@ Pages</li>
   {activeTab === "connections" && (
     <>
       <h3 className="title">
-        PEOPLE IN THE “UI/UX DESIGN” YOU MAY KNOW
+        PEOPLE YOU MAY KNOW
       </h3>
 
       <div className="grid">
