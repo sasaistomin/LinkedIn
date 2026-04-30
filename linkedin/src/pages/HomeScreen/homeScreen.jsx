@@ -35,6 +35,22 @@ export let textAndIconHeader = {
     'section1': {
         'img': 'sf',
         'text': 'Home'
+    },
+    'section2': {
+        'img': 'asd',
+        'text': 'Network'
+    },
+    'section3': {
+        'img': 'asd',
+        'text': 'Vacancies'
+    },
+    'section4': {
+        'img': 'das',
+        'text': 'Messages'
+    },
+    'section5': {
+        'img': 'fds',
+        'text': 'Notifications'
     }
 }
 
