@@ -10,7 +10,8 @@ import googleIcon from './google.svg';
 import EndSingIn from './pages/Login/EndSing/endSingIn';
 import EndSingUp from './pages/Login/EndSing/endSingUp';
 import SignUp from './pages/Login/signUp';
-
+import NetworkScreens from './pages/NetworkScreens/NetworkScreens';
+import MainSkills from './component/MainSkills/MainSkills';
 function App() {
     return (
         <Routes>
@@ -44,7 +45,12 @@ function App() {
                 dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
                 back='Back'/>} />
         </Routes>
-    );
+        //      <Routes>
+        //     <Route path="" element={<NetworkScreens />} />
+        //     {/* <Route path="" element={<MainSkills />} /> */}
+        // </Routes>
+
+);
 }
 
 export default App;
