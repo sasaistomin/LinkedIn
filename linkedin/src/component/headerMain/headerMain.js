@@ -1,24 +1,22 @@
 import './headerMain.css';
 import { Link } from 'react-router-dom';
 
-const OutLine = ({nav}) => {
-    const items = Object.values(nav);
-    return(
-        <>
-            {items.map((item, index) => (
-                <div key={index} className='nav'>
-                    <img src={item.img} alt="photo" />
-                    <div>
-                        <p>{item.text}</p>
-                    </div>
-                </div>
+const OutLine = ({ nav }) => {
+    const items = Object.values(nav || {});
+    return (
+        <div className="nav-container">
+            {items.map((item, index, to) => (
+                <Link key={index} className='nav-item'>
+                    <img src={item.img} alt={item.text} />
+                    <p>{item.text}</p>
+                </Link>
             ))}
-        </>
+        </div>
     );
 }
 
 const HomeLeftHeader = (props) => (
-    <div className='logo'>
+    <div className='logoHeader'>
         <Link to='/'>
             <img src={props.logo} alt='logo' />
         </Link>
@@ -26,27 +24,33 @@ const HomeLeftHeader = (props) => (
 );
 
 const HomeCenterHeader = (props) => (
-    <div>
-        <input type="text" />
-        <div>
-            <OutLine nav={props.hNav} />
+    <div className='headerCenter'>
+        <div className='inputSearch'>
+            <img src={props.search} alt="search" />
+            <input type="text" name='search' placeholder='Search'/>
         </div>
+
+        <OutLine nav={props.hNav} />
+
     </div>
 
 );
 
 
-// const HomeRightHeader = (props) => (
-
-// );
+const HomeRightHeader = ({ profileImg }) => (
+    <div className='nav-profile'>
+        <img src={profileImg} alt="My Profile" className="avatar" />
+        <p>My Profile</p>
+    </div>
+);
 
 
 const HeaderMain = (props) => (
     <div className="headerMain">
-        <div>
-            <HomeLeftHeader logo={props.logo} hNav={props.textAndIconHeader}/>
-            <HomeCenterHeader />
-            {/* <HomeRightHeader /> */}
+        <div className="header-content">
+            <HomeLeftHeader logo={props.logo} />
+            <HomeCenterHeader hNav={props.hNav} search={props.search}/>
+            <HomeRightHeader profileImg={props.userAvatar} />
         </div>
     </div>
 );
