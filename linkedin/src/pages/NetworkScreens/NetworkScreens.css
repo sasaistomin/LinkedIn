@@ -67,7 +67,7 @@ body {
 
 .container {
      display: grid;
-    grid-template-columns: 260px 1fr 450px;
+    grid-template-columns: 300px 1fr 400px;
   max-width: 1600px;
   gap: 20px;
   margin: 0 auto;
@@ -191,7 +191,7 @@ body {
 
 
 .right {
-  width: 300px;
+  width: 350px;
   background: white;
   border-radius: 12px;
   padding: 15px;
