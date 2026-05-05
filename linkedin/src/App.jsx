@@ -10,8 +10,8 @@ import googleIcon from './google.svg';
 import EndSingIn from './pages/Login/EndSing/endSingIn';
 import EndSingUp from './pages/Login/EndSing/endSingUp';
 import SignUp from './pages/Login/signUp';
-import NetworkScreens from './pages/NetworkScreens/NetworkScreens';
-import MainSkills from './component/MainSkills/MainSkills';
+import HomeScreen from './pages/HomeScreen/homeScreen';
+
 function App() {
     return (
         <Routes>
@@ -27,9 +27,9 @@ function App() {
                 img={logo}
                 textP='One more step'
                 textH='enter the authentication code'
-                linkSub='Submit' 
+                linkSub='Submit'
                 dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
-                back='Back'/>} />
+                back='Back' />} />
             <Route path='/sign-up' element={<SignUp
                 img={logo}
                 emailIcom={emailIcon}
@@ -41,16 +41,12 @@ function App() {
                 img={logo}
                 textP='One last step'
                 textH='enter the verification code'
-                linkSub='Submit' 
+                linkSub='Submit'
                 dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
-                back='Back'/>} />
+                back='Back' />} />
+            <Route path='/mainScreen' element={<HomeScreen logo={logo} />} />
         </Routes>
-        //      <Routes>
-        //     <Route path="" element={<NetworkScreens />} />
-        //     {/* <Route path="" element={<MainSkills />} /> */}
-        // </Routes>
-
-);
+    );
 }
 
 export default App;

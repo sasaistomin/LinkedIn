@@ -1,0 +1,9 @@
+.headerMain {
+    background-color: #6C5CE7;
+    height: 110px;
+}
+
+.headerMain>div {
+    display: flex;
+    align-items: center;
+}
