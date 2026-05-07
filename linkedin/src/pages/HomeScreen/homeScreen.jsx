@@ -7,6 +7,16 @@ import recommended from '../../recommended.svg';
 import home from '../../home.svg';
 import './homeScreen.css';
 
+import homeScreen from '../../homeScreen.svg';
+import netWork from '../../network.svg';
+import vacancies from '../../vacancies.svg';
+import messages from '../../messages.svg';
+import notifications from '../../notifications.svg';
+// import profile from '';
+
+import search from '../../search.svg';
+import userAvatar from '../../assets/777.png'
+
 export let textInfoFooter = {
     'info1': ['General information', 'Careers', 'Add Settings', 'Security Center'],
     'info2': ['Accessibility', 'Privacy and Terms', 'Mobile Phone'],
@@ -33,31 +43,31 @@ export let textToolsFooter = {
 
 export let textAndIconHeader = {
     'section1': {
-        'img': 'sf',
+        'img': homeScreen,
         'text': 'Home'
     },
     'section2': {
-        'img': 'asd',
+        'img': netWork,
         'text': 'Network'
     },
     'section3': {
-        'img': 'asd',
+        'img': vacancies,
         'text': 'Vacancies'
     },
     'section4': {
-        'img': 'das',
+        'img': messages,
         'text': 'Messages'
     },
     'section5': {
-        'img': 'fds',
+        'img': notifications,
         'text': 'Notifications'
     }
 }
 
 const HomeScreen = (props) => (
     <div>
-        <header>
-            <HeaderMain logo={props.logo}/>
+        <header className='header'>
+            <HeaderMain logo={props.logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar}/>
         </header>
         <footer>
             <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
