@@ -1,0 +1,296 @@
+/* Общая сетка */
+.main-messages-layout {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #f3f2ef;
+    min-height: calc(100vh - 60px);
+}
+
+.messages-content {
+    display: flex;
+    gap: 24px;
+    max-width: 1128px;
+    width: 100%;
+}
+
+/* Центр */
+.central-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter-tabs {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+.tab {
+    padding: 6px 16px;
+    border-radius: 16px;
+    border: 1px solid #7c62e4;
+    background: white;
+    color: #7c62e4;
+    font-size: 14px;
+    cursor: pointer;
+}
+.tab:active{
+    background-color: #7c62e4;
+    color: white;
+}
+
+
+
+.empty-state-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home-btn {
+    border: 1px solid #7c62e4;
+    background: white;
+    color: #7c62e4;
+    padding: 8px 24px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.home-btn:active{
+    color:#e0e0e0;
+    background-color: #7c62e4;
+}
+
+/* Лево (Профиль) */
+.left-sidebar {
+    width: 225px;
+}
+
+.profile-card {
+    background: white;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.profile-header-bg {
+    height: 60px;
+}
+
+.profile-body {
+    padding: 0 12px 16px 12px;
+}
+
+.sidebar-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid white; /* Жирная белая обводка */
+    margin-top: -36px; /* Наплыв на баннер */
+    object-fit: cover;
+    background-color: white;
+}
+
+.profile-info {
+    padding-top: 8px;
+}
+
+.profile-info h3 {
+    font-size: 16px;
+    margin: 4px 0;
+    color: #7c62e4; /* Фиолетовый текст имени */
+    font-weight: 600;
+}
+
+.profile-info p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+/* Линия как на макете */
+.divider {
+    height: 1px;
+    background-color: #7c62e4;
+    opacity: 0.2; /* Делаем линию бледной */
+    width: 90%;
+    margin: 0 auto 16px auto;
+}
+
+.profile-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Кнопка-таблетка */
+.add-experience-btn {
+    width: auto;
+    padding: 6px 20px;
+    border: 1px solid #7c62e4; /* Рамка в цвет текста */
+    border-radius: 20px; /* Скругление таблеткой */
+    background: transparent;
+    color: #7c62e4;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-experience-btn:hover {
+    background: rgba(124, 98, 228, 0.05); /* Легкий фон при наведении */
+}
+
+/* Право (Сообщения) */
+.right-sidebar {
+    width: 315px;
+    background: white;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.messages-header {
+    background: #7c62e4;
+    color: white;
+    padding: 12px 16px 0 16px; /* Нижний паддинг убираем из-за вкладок */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.user-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mini-avatar {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid rgba(255,255,255,0.5);
+}
+
+.header-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.icon-btn:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* Поле поиска */
+.search-box input {
+    width: 80%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background: white;
+    color:#7c62e4;
+    font-size: 13px;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color:#7c62e4;
+}
+
+/* Вкладки */
+.message-tabs {
+    display: flex;
+    margin-top: 12px;
+}
+
+.m-tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.m-tab.active {
+    opacity: 1;
+    border-bottom: 3px solid white;
+}
+
+/* Пустое состояние */
+.messages-empty-state {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.messages-empty-state h4 {
+    margin: 16px 0 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.messages-empty-state p {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Кнопка как на макете */
+.send-msg-btn {
+    padding: 8px 24px;
+    border: 1px solid #7c62e4;
+    background: white;
+    color: #7c62e4;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-msg-btn:hover {
+    background: #7c62e4;
+    color: white;
+}

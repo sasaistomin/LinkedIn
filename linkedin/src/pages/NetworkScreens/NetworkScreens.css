@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
- /* outline: 1px solid red; */
+ /* outline: 1px solid red;  */
 }
 body {
   overflow-x: hidden;
@@ -12,7 +12,7 @@ body {
 
 .page {
   background: #f3f2ef;
-  min-height: 100vh;
+  min-height: 1080;
 }
 
 
@@ -34,7 +34,7 @@ body {
 }
 
 .logo {
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .search {
@@ -44,6 +44,7 @@ body {
   border-radius: 20px;
   border: none;
     margin: 0 auto;
+    margin-left: 5%;
 }
 
 
@@ -65,11 +66,15 @@ body {
 
 
 .container {
-  display: flex;
+     display: grid;
+    grid-template-columns: 300px 1fr 400px;
+  max-width: 1600px;
   gap: 20px;
+  margin: 0 auto;
   padding: 20px;
-  max-width: 100%;
-  overflow: hidden; /* можно временно */
+
+  overflow: hidden;
+  
 }
 
 
@@ -186,7 +191,7 @@ body {
 
 
 .right {
-  width: 280px;
+  width: 350px;
   background: white;
   border-radius: 12px;
   padding: 15px;
@@ -198,7 +203,7 @@ body {
 }
 
 .msg-search {
-  width: 100%;
+  width: 90%;
   padding: 8px;
   border-radius: 10px;
   border: 1px solid #ddd;

@@ -1,16 +1,8 @@
 .mainHero {
     background-color: #F8F8F8;
     height: 100vh;
-    
 }
 
-.logo>img {
-    margin-left: 48px;
-    margin-top: 48px;
-    width: 96px;
-    height: 96px;
-    margin-bottom: 81px;
-}
 
 .singIn-hero {
     background-color: #FFFFFF;
