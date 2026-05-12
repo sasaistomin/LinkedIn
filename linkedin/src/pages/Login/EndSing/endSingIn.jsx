@@ -43,7 +43,7 @@ const EndSingIn = (props) => {
                     ))}
                 </div>
                 <div className='subDontCodeBack'>
-                    <Link className='submit'>
+                    <Link to='/mainScreen' className='submit'>
                         <p>{props.linkSub}</p>
                     </Link>
                     <p>{props.dontCodeP} <Link className='sendCode'>{props.dontCodeSpan}</Link></p>

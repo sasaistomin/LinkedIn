@@ -1,0 +1,83 @@
+.headerMain {
+    margin-left: 212px;
+    margin-right: 212px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    
+    height: 110px;
+}
+
+.nav-container {
+    display: flex;
+    gap: 48px;
+}
+
+.headerCenter {
+    display: flex;
+    gap: 48px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item>img {
+    width: 2rem;
+}
+
+.nav-item>p {
+    color: white;
+}
+
+.logoHeader {
+    margin-right: 90px;
+}
+
+.inputSearch {
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.inputSearch>img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.inputSearch>input:focus {
+    outline: none;
+}
+
+.inputSearch>input {
+    margin-left: 10px;
+    border: 0;
+    color: #6C5CE7;
+    width: 480px;
+}
+
+.nav-profile>img {
+    height: 34px;
+    width: 34px;
+}
+
+.nav-profile>p {
+    color: white;
+}
+
+.nav-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 108px;
+}
