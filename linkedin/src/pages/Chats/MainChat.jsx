@@ -110,7 +110,7 @@ const usersData = [
      {
     id: 10,
     user: {
-      name: "Irishka Chiki-Pici",
+      name: "Iryna Topal",
       avatar: photo10, 
       headline: "Fullstack Developer",
       
