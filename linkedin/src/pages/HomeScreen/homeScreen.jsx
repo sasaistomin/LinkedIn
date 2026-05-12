@@ -16,6 +16,7 @@ import notifications from '../../notifications.svg';
 
 import search from '../../search.svg';
 import userAvatar from '../../assets/777.png'
+import MainSceenCompouner from '../../component/mainSceenCompouner/mainSceenCompouner';
 
 export let textInfoFooter = {
     'info1': ['General information', 'Careers', 'Add Settings', 'Security Center'],
@@ -69,7 +70,7 @@ const HomeScreen = (props) => (
         <header className='header'>
             <HeaderMain logo={props.logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar}/>
         </header>
-        
+        <MainSceenCompouner userAvatar={userAvatar}/>
         <footer>
             <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
         </footer>

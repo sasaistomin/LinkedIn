@@ -47,7 +47,7 @@ function App() {
                 dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
                 back='Back' />} />
             <Route path='/mainScreen' element={<HomeScreen logo={logo} />} />
-            <Route path='/chat' element={<ChatWindow />} />
+            
         </Routes>
     );
 }

@@ -1,9 +1,10 @@
+import MainNewPost from '../mainNewPost/mainNewPost';
 import './mainSceenCompouner.css';
 
-const mainSceenCompouner = () => (
+const MainSceenCompouner = (props) => (
   <div className="mainSceenCompouner">
-    mainSceenCompouner Component
+    <MainNewPost userAvatar={props.userAvatar}/>
   </div>
 );
 
-export default mainSceenCompouner;
+export default MainSceenCompouner;
