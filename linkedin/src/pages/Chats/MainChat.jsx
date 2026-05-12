@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ChatList from './components/ChatList';
 import ChatWindow from './components/ChatWindow';
+
 import UserProfileSidebar from './components/UserProfileSidebar';
 import photo1 from './assets/img/norpфото.webp'
 import photo2 from './assets/img/mystatphoto.webp'
@@ -14,7 +15,7 @@ import photo9 from  './assets/img/20250315_210100.webp'
 import photo10 from './assets/img/6F2EAF82-206A-4B47-B182-C10A5315146B.webp'
 import photo11 from  './assets/img/E7D3F4D7-8926-4049-80A7-378BB04E8943.webp'
 import Header from './components/Header';
-import './App.css';
+import './MainChat.css';
 
 const usersData = [
   {
