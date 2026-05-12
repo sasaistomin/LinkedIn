@@ -69,6 +69,7 @@ const HomeScreen = (props) => (
         <header className='header'>
             <HeaderMain logo={props.logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar}/>
         </header>
+        
         <footer>
             <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
         </footer>
