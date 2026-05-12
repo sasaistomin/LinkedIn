@@ -1,21 +1,30 @@
 import React, { useState } from 'react';
-import ChatList from './components/ChatList';
-import ChatWindow from './components/ChatWindow';
+import ChatList from './ChatList';
+import ChatWindow from './ChatWindow';
 
-import UserProfileSidebar from './components/UserProfileSidebar';
-import photo1 from './assets/img/norpфото.webp'
-import photo2 from './assets/img/mystatphoto.webp'
-import photo3 from './assets/img/IMG_20240816_191720_350.webp'
-import photo4 from  './assets/img/1000146412.webp'
-import photo5 from './assets/img/photo_5193170555778489933_y.webp'
-import photo6 from  './assets/img/653353AD-6F93-4FB7-94D3-1366BDADE4EF.webp' 
-import photo7 from  './assets/img/E7FD316D-7D79-493C-934C-FC7472849C01.webp'
-import photo8 from  './assets/img/5339413118465466920.webp'
-import photo9 from  './assets/img/20250315_210100.webp'
-import photo10 from './assets/img/6F2EAF82-206A-4B47-B182-C10A5315146B.webp'
-import photo11 from  './assets/img/E7D3F4D7-8926-4049-80A7-378BB04E8943.webp'
-import Header from './components/Header';
+import UserProfileSidebar from './UserProfileSidebar';
+import photo1 from '../../assets/norpфото.webp'
+import photo2 from '../../assets/mystatphoto.webp'
+import photo3 from '../../assets/IMG_20240816_191720_350.webp'
+import photo4 from  '../../assets/1000146412.webp'
+import photo5 from '../../assets/photo_5193170555778489933_y.webp'
+import photo6 from  '../../assets/653353AD-6F93-4FB7-94D3-1366BDADE4EF.webp' 
+import photo7 from  '../../assets/E7FD316D-7D79-493C-934C-FC7472849C01.webp'
+import photo8 from  '../../assets/5339413118465466920.webp'
+import photo9 from  '../../assets/20250315_210100.webp'
+import photo10 from '../../assets/6F2EAF82-206A-4B47-B182-C10A5315146B.webp'
+import photo11 from  '../../assets/E7D3F4D7-8926-4049-80A7-378BB04E8943.webp'
+
 import './MainChat.css';
+import HeaderMain from '../../component/headerMain/headerMain';
+
+import homeScreen from '../../homeScreen.svg';
+import netWork from '../../network.svg';
+import vacancies from '../../vacancies.svg';
+import messages from '../../messages.svg';
+import notifications from '../../notifications.svg';
+import search from '../../search.svg';
+import userAvatar from '../../assets/777.png'
 
 const usersData = [
   {
@@ -119,19 +128,43 @@ const usersData = [
 
 ];
 
-function App() {
+export let textAndIconHeader = {
+    'section1': {
+        'img': homeScreen,
+        'text': 'Home'
+    },
+    'section2': {
+        'img': netWork,
+        'text': 'Network'
+    },
+    'section3': {
+        'img': vacancies,
+        'text': 'Vacancies'
+    },
+    'section4': {
+        'img': messages,
+        'text': 'Messages'
+    },
+    'section5': {
+        'img': notifications,
+        'text': 'Notifications'
+    }
+}
+
+function MainChat(props) {
   const [selectedUser, setSelectedUser] = useState(usersData[0]);
 
  return (
   <div className='app-wrapper'>
-    <Header />
+    <HeaderMain logo={props.logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar}/>
     <div className="messenger-container">
       <ChatList users={usersData} onSelect={setSelectedUser} activeId={selectedUser.id} />
       <ChatWindow user={selectedUser} />
       <UserProfileSidebar user={selectedUser} />
+      
     </div>
   </div>
 );
 }
 
-export default App;
+export default MainChat;

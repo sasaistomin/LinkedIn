@@ -1,6 +1,6 @@
 import React from 'react';
 import './ChatList.css'
-import myPhoto from '../assets/img/norpфото.webp';
+import myPhoto from '../../assets/norpфото.webp';
 
 const ChatList = ({ users, onSelect, activeId }) => {
   return (

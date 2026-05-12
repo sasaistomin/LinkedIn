@@ -13,6 +13,8 @@ import SignUp from './pages/Login/signUp';
 import HomeScreen from './pages/HomeScreen/homeScreen';
 import UserProfileSidebar from './pages/Chats/UserProfileSidebar';
 import ChatWindow from './pages/Chats/ChatWindow';
+import MainChat from './pages/Chats/MainChat'
+import MainMessage from './pages/Messages/MainMessages';
 
 function App() {
     return (
@@ -47,7 +49,8 @@ function App() {
                 dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
                 back='Back' />} />
             <Route path='/mainScreen' element={<HomeScreen logo={logo} />} />
-            <Route path='/chat' element={<ChatWindow />} />
+            <Route path='/chat' element={<MainChat logo={logo}/>} />
+            <Route path='/mess' element={<MainMessage logo={logo} />} />
         </Routes>
     );
 }
