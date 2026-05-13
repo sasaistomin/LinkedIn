@@ -3,7 +3,6 @@ body {
   padding: 0;
   /* background-color: #f3f2ef; */
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  overflow: hidden; 
 }
 
 .app-wrapper {
