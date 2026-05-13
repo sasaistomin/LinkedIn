@@ -1,42 +1,50 @@
 .sidebar-left {
   flex: 0 0 315px;
+  height: 100vh; 
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
-.chat-tabs {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  border-bottom: 1px solid #e0e0e0;
-  font-weight: 600;
-  color: #666;
-  font-size: 14px;
-}
-
-.chat-tabs span.active {
-  color: #7b61ff;
-  border-bottom: 2px solid #7b61ff;
-  padding-bottom: 5px;
-}
-
-.search-box {
+.sidebar-left .search-box {
   padding: 10px 15px;
-  border-bottom: 1px solid #e0e0e0;
+  background: white;
 }
 
-.search-box input {
+.sidebar-left .search-box input {
+  display: block;
   width: 100%;
-  padding: 8px 12px;
-  border-radius: 4px;
-  border: 1px solid #e0e0e0;
-  background: #f3f6f8;
-  outline: none;
+  padding: 10px 15px;
+  border: 1.5px solid #7b61ff; 
+  border-radius: 10px; 
+  background: #ffffff;
   font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.sidebar-left .search-box input::placeholder {
+  color: #7b61ff;
+}
+.chat-items {
+  flex: 1; 
+  overflow-y: auto; 
+}
+
+.chat-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-items::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+}
+
+.chat-items::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .chat-card {
@@ -46,21 +54,34 @@
   padding: 12px 15px;
   cursor: pointer;
   border-bottom: 1px solid #f3f2ef;
+  transition: background-color 0.2s;
 }
 
-.chat-card:hover { background-color: #f3f6f8; }
-.chat-card.active { background-color: #f0edff; border-left: 3px solid #7b61ff; }
+.chat-card:hover { 
+  background-color: #f3f6f8; 
+}
 
-.chat-card img {
-  width: 40px;
-  height: 40px;
+.chat-card.active { 
+  background-color: #f0edff; 
+  border-left: 3px solid #7b61ff; 
+}
+
+.chat-avatar-container {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.chat-img {
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 12px;
+  display: block;
 }
 
 .chat-card .text-content {
   flex: 1;
+  min-width: 0; 
 }
 
 .chat-card .text-content h4 {
@@ -76,5 +97,5 @@
   color: #666;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; 
 }
