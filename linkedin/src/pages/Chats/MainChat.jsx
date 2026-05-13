@@ -128,35 +128,13 @@ const usersData = [
 
 ];
 
-export let textAndIconHeader = {
-    'section1': {
-        'img': homeScreen,
-        'text': 'Home'
-    },
-    'section2': {
-        'img': netWork,
-        'text': 'Network'
-    },
-    'section3': {
-        'img': vacancies,
-        'text': 'Vacancies'
-    },
-    'section4': {
-        'img': messages,
-        'text': 'Messages'
-    },
-    'section5': {
-        'img': notifications,
-        'text': 'Notifications'
-    }
-}
 
 function MainChat(props) {
   const [selectedUser, setSelectedUser] = useState(usersData[0]);
 
  return (
   <div className='app-wrapper'>
-    <HeaderMain logo={props.logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar}/>
+    <HeaderMain logo={props.logo} search={search} userAvatar={userAvatar}/>
     <div className="messenger-container">
       <ChatList users={usersData} onSelect={setSelectedUser} activeId={selectedUser.id} />
       <ChatWindow user={selectedUser} />
