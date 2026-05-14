@@ -19,7 +19,6 @@ time, mark, audio, video, a{
 	vertical-align: baseline;
     text-decoration: none;
 }
-/* Сброс для списков */
 ol, ul {
 	list-style: none;
 }

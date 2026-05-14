@@ -1,12 +1,46 @@
 import './headerMain.css';
 import { Link } from 'react-router-dom';
+import homeScreen from '../../homeScreen.svg';
+import netWork from '../../network.svg';
+import vacancies from '../../vacancies.svg';
+import messages from '../../messages.svg';
+import notifications from '../../notifications.svg';
+
+let textAndIconHeader = {
+    'section1': {
+        'img': homeScreen,
+        'text': 'Home',
+        'to': '/home'
+    },
+    'section2': {
+        'img': netWork,
+        'text': 'Network',
+        'to': '/network'
+    },
+    'section3': {
+        'img': vacancies,
+        'text': 'Vacancies',
+        'to': '/vacancies'
+    },
+    'section4': {
+        'img': messages,
+        'text': 'Messages',
+        'to': '/messages'
+    },
+    'section5': {
+        'img': notifications,
+        'text': 'Notifications',
+        'to': '/notifications'
+    }
+}
+
 
 const OutLine = ({ nav }) => {
     const items = Object.values(nav || {});
     return (
         <div className="nav-container">
             {items.map((item, index, to) => (
-                <Link key={index} className='nav-item'>
+                <Link key={index} to={item.to} className='nav-item'>
                     <img src={item.img} alt={item.text} />
                     <p>{item.text}</p>
                 </Link>
@@ -49,10 +83,12 @@ const HeaderMain = (props) => (
     <div className="headerMain">
         <div className="header-content">
             <HomeLeftHeader logo={props.logo} />
-            <HomeCenterHeader hNav={props.hNav} search={props.search}/>
+            <HomeCenterHeader hNav={textAndIconHeader} search={props.search}/>
             <HomeRightHeader profileImg={props.userAvatar} />
         </div>
     </div>
 );
+
+
 
 export default HeaderMain;

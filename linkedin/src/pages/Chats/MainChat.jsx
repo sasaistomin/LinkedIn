@@ -38,9 +38,9 @@ const usersData = [
   {
     id: 2,
     user: {
-      name: "Alexander Istomin",
+      name: "Posmitiuha Artem",
       avatar: photo2, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
@@ -49,7 +49,7 @@ const usersData = [
     user: {
       name: "Pablo Escobar",
       avatar: photo3, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
@@ -58,7 +58,7 @@ const usersData = [
     user: {
       name: "Ilon Mask",
       avatar: photo4, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
@@ -67,7 +67,7 @@ const usersData = [
     user: {
       name: "Ylia Timoshenko",
       avatar: photo5, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
@@ -76,7 +76,7 @@ const usersData = [
     user: {
       name: "Sasha Beliy",
       avatar: photo6, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
@@ -85,7 +85,7 @@ const usersData = [
     user: {
       name: "Renat Koshkin",
       avatar: photo7, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
@@ -94,7 +94,7 @@ const usersData = [
     user: {
       name: "Leonid Karachun",
       avatar: photo8, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
@@ -103,16 +103,16 @@ const usersData = [
     user: {
       name: "Oleg Borvinok",
       avatar: photo9, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
      {
     id: 10,
     user: {
-      name: "Irishka Chiki-Pici",
+      name: "Iryna Topal",
       avatar: photo10, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
@@ -121,42 +121,20 @@ const usersData = [
     user: {
       name: "Tasya Iordan",
       avatar: photo11, 
-      headline: "Fullstack Developer",
+      headline: "Frontend Developer",
       
     }
   },
 
 ];
 
-export let textAndIconHeader = {
-    'section1': {
-        'img': homeScreen,
-        'text': 'Home'
-    },
-    'section2': {
-        'img': netWork,
-        'text': 'Network'
-    },
-    'section3': {
-        'img': vacancies,
-        'text': 'Vacancies'
-    },
-    'section4': {
-        'img': messages,
-        'text': 'Messages'
-    },
-    'section5': {
-        'img': notifications,
-        'text': 'Notifications'
-    }
-}
 
 function MainChat(props) {
   const [selectedUser, setSelectedUser] = useState(usersData[0]);
 
  return (
   <div className='app-wrapper'>
-    <HeaderMain logo={props.logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar}/>
+    <HeaderMain logo={props.logo} search={search} userAvatar={userAvatar}/>
     <div className="messenger-container">
       <ChatList users={usersData} onSelect={setSelectedUser} activeId={selectedUser.id} />
       <ChatWindow user={selectedUser} />

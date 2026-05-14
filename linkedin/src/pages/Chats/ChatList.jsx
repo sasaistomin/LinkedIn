@@ -1,21 +1,19 @@
 import React from 'react';
-import './ChatList.css'
-import myPhoto from '../../assets/norpфото.webp';
+import './ChatList.css';
 
 const ChatList = ({ users, onSelect, activeId }) => {
   return (
     <aside className="sidebar-left">
       <div className="search-box">
         <input type="text" placeholder="Search" />
-        <i></i>
       </div>
+      
       <div className="chat-items">
         {users.map((item) => (
           <div 
             key={item.id} 
             className={`chat-card ${item.id === activeId ? 'active' : ''}`}
-            onClick={() => onSelect(item)}
-          >
+            onClick={() => onSelect(item)}>
             <div className="avatar-placeholder chat-avatar-size">
               <div className="avatar-placeholder chat-avatar-size">
                 <img 
