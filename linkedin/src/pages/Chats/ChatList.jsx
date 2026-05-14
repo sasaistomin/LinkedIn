@@ -1,14 +1,13 @@
 import React from 'react';
-import './ChatList.css'
-import myPhoto from '../../assets/norpфото.webp';
+import './ChatList.css';
 
 const ChatList = ({ users, onSelect, activeId }) => {
   return (
     <aside className="sidebar-left">
       <div className="search-box">
         <input type="text" placeholder="Search" />
-        <i></i>
       </div>
+      
       <div className="chat-items">
         {users.map((item) => (
           <div 

@@ -1,7 +1,7 @@
 .headerMain {
-    padding-left: 212px;
-    padding-right: 212px;background-color: #6C5CE7;
-
+    background-color: #6C5CE7;
+    display: flex;
+    justify-content: center;
 }
 
 .header-content {
@@ -39,7 +39,7 @@
 }
 
 .logoHeader {
-    margin-right: 90px;
+    margin-right: 128px;
 }
 
 .inputSearch {
@@ -49,6 +49,7 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
+    margin-top: 5px;
 }
 
 .inputSearch>img {
@@ -82,5 +83,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 108px;
+    margin-left: 128px;
 }
