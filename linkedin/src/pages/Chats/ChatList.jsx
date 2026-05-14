@@ -14,8 +14,7 @@ const ChatList = ({ users, onSelect, activeId }) => {
           <div 
             key={item.id} 
             className={`chat-card ${item.id === activeId ? 'active' : ''}`}
-            onClick={() => onSelect(item)}
-          >
+            onClick={() => onSelect(item)}>
             <div className="avatar-placeholder chat-avatar-size">
               <div className="avatar-placeholder chat-avatar-size">
                 <img 

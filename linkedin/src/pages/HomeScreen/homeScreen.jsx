@@ -12,7 +12,6 @@ import netWork from '../../network.svg';
 import vacancies from '../../vacancies.svg';
 import messages from '../../messages.svg';
 import notifications from '../../notifications.svg';
-// import profile from '';
 
 import search from '../../search.svg';
 import userAvatar from '../../assets/777.png'
