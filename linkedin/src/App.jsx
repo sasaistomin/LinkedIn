@@ -15,6 +15,7 @@ import UserProfileSidebar from './pages/Chats/UserProfileSidebar';
 import ChatWindow from './pages/Chats/ChatWindow';
 import MainChat from './pages/Chats/MainChat'
 import MainMessage from './pages/Messages/MainMessages';
+import Recomend from './component/RecomendComponent/Recomend';
 
 function App() {
     return (
@@ -52,7 +53,7 @@ function App() {
 
             <Route path='/chat' element={<MainChat logo={logo}/>} />
             <Route path='/mess' element={<MainMessage logo={logo} />} />
-
+            <Route path='/rec' element = {<Recomend logo = {logo} />} />
             
 
         </Routes>

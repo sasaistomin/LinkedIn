@@ -1,12 +1,9 @@
 import React from 'react';
-// Компоненты
 import HeaderMain from '../../component/headerMain/headerMain';
 import LeftSideBar from './LeftSideBar';
 import RightSideBar from './RightSideBar';
-// Стили
 import './MainMessages.css';
 
-// Ассеты (иконки для хедера)
 import homeScreen from '../../homeScreen.svg';
 import netWork from '../../network.svg';
 import vacancies from '../../vacancies.svg';
@@ -15,7 +12,6 @@ import notifications from '../../notifications.svg';
 import searchIcon from '../../search.svg'; 
 import userAvatar from '../../assets/777.png';
 
-// Данные для навигации хедера
 export const textAndIconHeader = {
     'section1': { 'img': homeScreen, 'text': 'Home' },
     'section2': { 'img': netWork, 'text': 'Network' },
@@ -27,7 +23,6 @@ export const textAndIconHeader = {
 const MainMessages = (props) => {
     return (
         <div className="app-container">
-            {/* ХЕДЕР ВСЕГДА ПЕРВЫМ */}
             <HeaderMain 
                 logo={props.logo} 
                 hNav={textAndIconHeader} 
@@ -35,7 +30,6 @@ const MainMessages = (props) => {
                 userAvatar={userAvatar} 
             />
 
-            {/* КОНТЕНТ ПОД ХЕДЕРОМ */}
             <div className="main-messages-layout">
                 <div className="messages-content">
                     
