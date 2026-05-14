@@ -2,10 +2,10 @@
     height: 312px;
     background-color: #6C5CE7;
     display: flex;
+    justify-content: center;
 }
 
 .leftFooter {
-    margin-left: 228.5px;
     color: #FFFFFF;
     display: flex;
     font-size: 16px;
