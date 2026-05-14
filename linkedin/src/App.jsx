@@ -48,10 +48,10 @@ function App() {
                 linkSub='Submit'
                 dontCodeP='Didn’t receive the code?' dontCodeSpan='Send the code again'
                 back='Back' />} />
-            <Route path='/mainScreen' element={<HomeScreen logo={logo} />} />
+            <Route path='/home' element={<HomeScreen logo={logo} />} />
 
             <Route path='/chat' element={<MainChat logo={logo}/>} />
-            <Route path='/mess' element={<MainMessage logo={logo} />} />
+            <Route path='/messages' element={<MainMessage logo={logo} />} />
 
             
 

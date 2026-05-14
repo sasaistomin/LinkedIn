@@ -9,23 +9,28 @@ import notifications from '../../notifications.svg';
 let textAndIconHeader = {
     'section1': {
         'img': homeScreen,
-        'text': 'Home'
+        'text': 'Home',
+        'to': '/home'
     },
     'section2': {
         'img': netWork,
-        'text': 'Network'
+        'text': 'Network',
+        'to': '/network'
     },
     'section3': {
         'img': vacancies,
-        'text': 'Vacancies'
+        'text': 'Vacancies',
+        'to': '/vacancies'
     },
     'section4': {
         'img': messages,
-        'text': 'Messages'
+        'text': 'Messages',
+        'to': '/messages'
     },
     'section5': {
         'img': notifications,
-        'text': 'Notifications'
+        'text': 'Notifications',
+        'to': '/notifications'
     }
 }
 
@@ -35,7 +40,7 @@ const OutLine = ({ nav }) => {
     return (
         <div className="nav-container">
             {items.map((item, index, to) => (
-                <Link key={index} className='nav-item'>
+                <Link key={index} to={item.to} className='nav-item'>
                     <img src={item.img} alt={item.text} />
                     <p>{item.text}</p>
                 </Link>

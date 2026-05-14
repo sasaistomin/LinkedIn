@@ -1,1 +1,82 @@
-.mainNewPost {}
+.mainNewPost {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+    width: 768px;
+    height: 240px;
+    border-radius: 8px;
+    padding: 48px 47.5px 0px 47.5px;
+    box-sizing: border-box;
+}
+
+.postPhoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%
+}
+
+.boxInputPost {
+    border: 1px solid rgba(108, 92, 231, 1);
+    border-radius: 8px;
+    width: 603px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.inputPost {
+    border: 0px;
+    padding: 18px 0px 18px 10px;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.inputPost::placeholder {
+    color: rgba(108, 92, 231, 1);
+    font-size: 16px;
+}
+
+.inputPost:focus {
+    outline: none;
+}
+
+.photoAndInputPost {
+    display: flex;
+    gap: 8px;
+}
+
+.theePVE {
+    display: flex;
+    justify-content:space-between;
+    width: 567px;
+    height: 44px;
+}
+
+.itemPVE {
+    display: flex;
+    height: 44px;
+    width: 110px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemPVE > p {
+    font-size: 20px;
+}
+
+.iconWrapper {
+    height: 24px;
+    width: 24px;
+} 
+.boxPVE {
+    display: flex;
+    justify-content: center;
+}
+
+.spanLine {
+    border: 1px solid rgba(111, 96, 232, 1);
+    width: 671px;
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}

@@ -6,9 +6,9 @@ const TheeOut = ({ itemPVE }) => {
     return (
         <div className='theePVE'>
             {items.map((item, index) => (
-                <Link key={index}>
+                <Link key={index} className='itemPVE'>
                     {/* <img src={item.img} alt={item.text} /> */}
-                    <div className="icon-wrapper" dangerouslySetInnerHTML={{ __html: item.img }} />
+                    <div className="iconWrapper" dangerouslySetInnerHTML={{ __html: item.img }} />
                     <p>{item.text}</p>
                 </Link>
             ))}
@@ -37,12 +37,16 @@ const PVE = {
 
 const MainNewPost = (props) => (
     <div className="mainNewPost">
-        <div>
-            <img src={props.userAvatar} alt="" />
-            <input type="text" />
+        <div className='photoAndInputPost'>
+            <img src={props.userAvatar} alt="photo" className='postPhoto' />
+            <div className='boxInputPost'>
+                <input type="text" placeholder='Start your post' className='inputPost' />
+            </div>
         </div>
-        <span></span>
-        <TheeOut itemPVE={PVE} />
+        <span className='spanLine'></span>
+        <div className='boxPVE'>
+            <TheeOut itemPVE={PVE} />
+        </div>
     </div>
 );
 
