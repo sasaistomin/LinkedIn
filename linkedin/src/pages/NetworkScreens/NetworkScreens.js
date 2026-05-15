@@ -60,10 +60,10 @@ export default function NetworkScreens() {
 
            <header className='header'>
             <HeaderMain logo={logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar}/>
-        </header>
-            <div className="container">
+            </header>
+             <div className="container">
 
-                <div className="left">
+               <div className="left">
                     <h4>Manage your network of contacts</h4>
                     <ul>
                         <li><svg width="32" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

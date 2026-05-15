@@ -16,6 +16,7 @@ import ChatWindow from './pages/Chats/ChatWindow';
 import MainChat from './pages/Chats/MainChat'
 import MainMessage from './pages/Messages/MainMessages';
 import Recomend from './component/RecomendComponent/Recomend';
+import NetworkScreens from './pages/NetworkScreens/NetworkScreens';
 
 function App() {
     return (
@@ -52,8 +53,9 @@ function App() {
             <Route path='/home' element={<HomeScreen logo={logo} />} />
 
             <Route path='/chat' element={<MainChat logo={logo}/>} />
-            <Route path='/mess' element={<MainMessage logo={logo} />} />
+            <Route path='/messages' element={<MainMessage logo={logo} />} />
             <Route path='/rec' element = {<Recomend logo = {logo} />} />
+            <Route path='/network' element={<NetworkScreens />} />
             
 
         </Routes>

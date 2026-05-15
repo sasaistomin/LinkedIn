@@ -1,3 +1,10 @@
 .header {
     background-color: #6C5CE7;
 }
+
+.mainHome {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 92px;
+}

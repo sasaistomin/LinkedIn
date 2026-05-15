@@ -16,6 +16,8 @@ import notifications from '../../notifications.svg';
 import search from '../../search.svg';
 import userAvatar from '../../assets/777.png'
 import MainSceenCompouner from '../../component/mainSceenCompouner/mainSceenCompouner';
+import LeftSideBar from '../Messages/LeftSideBar';
+import RightSideBar from '../Messages/RightSideBar';
 
 export let textInfoFooter = {
     'info1': ['General information', 'Careers', 'Add Settings', 'Security Center'],
@@ -67,9 +69,15 @@ export let textAndIconHeader = {
 const HomeScreen = (props) => (
     <div>
         <header className='header'>
-            <HeaderMain logo={props.logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar}/>
+            <HeaderMain logo={props.logo} hNav={textAndIconHeader} search={search} userAvatar={userAvatar} />
         </header>
-        <MainSceenCompouner userAvatar={userAvatar}/>
+        <main className='mainHome'>
+            <LeftSideBar />
+            <div className='mainCenterHome'>
+                <MainSceenCompouner userAvatar={userAvatar} />
+            </div>
+            <RightSideBar />
+        </main>
         <footer>
             <Footer info={textInfoFooter} tools={textToolsFooter} text='Language' language='English' icon={lanIcon} />
         </footer>

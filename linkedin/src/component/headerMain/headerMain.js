@@ -30,7 +30,7 @@ let textAndIconHeader = {
     'section5': {
         'img': notifications,
         'text': 'Notifications',
-        'to': '/notifications'
+        'to': '/chat'
     }
 }
 

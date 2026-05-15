@@ -16,7 +16,7 @@ body {
 }
 
 
-.header {
+/* .header {
   min-height: 70px;
   background: linear-gradient(90deg, #6c63ff, #8e7dff);
   display: flex;
@@ -35,7 +35,7 @@ body {
 
 .logo {
   /* margin-right: 20px; */
-}
+/* } */
 
 .search {
   width: 300px;
@@ -62,7 +62,7 @@ body {
 .header-nav .active {
   opacity: 1;
   font-weight: bold;
-}
+} */
 
 
 .container {
